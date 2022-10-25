@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="pt-bt">
+    <head>
+        <meta charset="utf-8">
+        <title>Amor & Gelatto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/1948/PNG/512/free-30-instagram-stories-icons20_122567.png">
+    </head>
+    <p>
+        <img src="https://cdn.icon-icons.com/icons2/1948/PNG/512/free-30-instagram-stories-icons20_122567.png" alt="logo da Amor & Gelatto" style="float:left;width:100px">
+    </p>
+    <div align="center">
+        <h1>Bem vindo (a) a nossa sorveteria!</h1> 
+    </div>
+   
+    <body style="background-color:rgb(153, 62, 77)">
+        
+        <div align="right">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cardapio.html">CARDÁPIO</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="localizaçao.html">LOCALIZAÇÃO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            
+        </ul>
+        </div>
+        <br>
+            <hr>
+        <table>
+            <tr>
+              <td><img  width="300" height="200" src='https://cdn.pixabay.com/photo/2016/12/26/16/09/bowl-1932375_960_720.jpg'/></td>
+              
+              <td class="frase1">    Temos diversos sabores de sorvetes, é só escolher o seu preferido! </br></td> 
+            </tr>
+        </table>
+
+          <table>
+            <tr>
+              <td><img  width="300" height="200" src='https://cdn.pixabay.com/photo/2016/06/27/18/16/popsicle-1482976_960_720.jpg'/></td>
+              
+              <td class="frase2"> Temos diversos sabores de picolés, é só escolher o seu preferido! </br> </td> 
+            </tr>
+         </table>
+
+          <table>
+            <tr>
+              <td><img  width="300" height="200" src='https://diaonline.ig.com.br/wp-content/uploads/2020/01/aa-em-jata_capa-1024x683.jpg'/></td>
+              
+              <td class="frase3">Temos diversos tamanhos, acompanhamentos e tipos de açaí, é só escolher o seu preferido! </br> </td> 
+            </tr>
+           </table>
+
+           <table>
+            <tr>
+              <td><img  width="300" height="200" src='https://img.freepik.com/fotos-premium/tres-copos-de-milkshake-de-sabores-variados-milkshake-de-chocolate-baunilha-e-morango_434193-2702.jpg?w=2000'/></td>
+              
+              <td cass="frase4"> Temos diversos tamanhos e sabores de milkshakes, é só escolher o seu preferido! </br> </td> 
+            </tr>
+           </table>
+
+
+
+        
+        
+        
+        
+
+    </body>
+</html>
