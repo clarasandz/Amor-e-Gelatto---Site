@@ -1,63 +1,94 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-bt">
-    <head>
-        <meta charset="utf-8">
-        <title>Amor & Gelatto</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="amoregelattologo.png">
-    </head>
-    <body style="background-color:rgb(167, 96, 111)">
-      <header>
-      <img src="amoregelattologo.png" width="100" height="100" align="left" vspace="5" hspace="5">
-       <p id="bemvindo">Bem vindo (a) a Sorveteria Amor & Gelatto!</p>
-      <ul align="center">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="amoregelattologo.png">
+  <title>Amor & Gelatto</title>
+  <style>
+    body{
+      margin: 0 auto;
+      padding: 15px;
+      
+    }
+    span{
+    color: rgb(194, 26, 54);
+    }
+    #f1{
+    line-height: 20px;
+    max-width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #sorveteinit{
+    width: 550px;
+  }
+  #login{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+  }
+  #botao{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(153, 0, 51);
+    color: white;
+    font-weight: bold;
+  }
+  #botao:hover{
+    cursor: pointer;
+    background: rgb(228, 117, 163);
+    color: #000; 
+    border-color: #000;
+    transition: 0.3s all;
+  }
+  #inscrevase{
+    color:rgb(21, 21, 88);
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="amoregelattologo.png" width="100" height="100" align="left" vspace="5" hspace="5">
+       
+       <nav>
+      <ul>
         <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="cardapio.html">CARDÁPIO</a></li>
         <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="inscrevase.html">INSCREVA-SE</a></li>
+        <li><a href="cardapio.html">CARDÁPIO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
         <li><a href="localizaçao.html">LOCALIZAÇÃO</a></li>
+      
         </ul>
-        <hr>
-      </header>
-      <table>
-        <tr>
-          <td><img  width="300" height="200" src='https://cdn.pixabay.com/photo/2016/12/26/16/09/bowl-1932375_960_720.jpg'/></td>
-          
-          <td class="frase1">    Temos diversos sabores de sorvetes, é só escolher o seu preferido! </br></td> 
-        </tr>
-    </table>
-
-      <table>
-        <tr>
-          <td><img  width="300" height="200" src='https://cdn.pixabay.com/photo/2016/06/27/18/16/popsicle-1482976_960_720.jpg'/></td>
-          
-          <td class="frase2"> Temos diversos sabores de picolés, é só escolher o seu preferido! </br> </td> 
-        </tr>
-     </table>
-
-      <table>
-        <tr>
-          <td><img  width="300" height="200" src='https://diaonline.ig.com.br/wp-content/uploads/2020/01/aa-em-jata_capa-1024x683.jpg'/></td>
-          
-          <td class="frase3">Temos diversos tamanhos, acompanhamentos e tipos de açaí, é só escolher o seu preferido! </br> </td> 
-        </tr>
-       </table>
-
-       <table>
-        <tr>
-          <td><img  width="300" height="200" src='https://img.freepik.com/fotos-premium/tres-copos-de-milkshake-de-sabores-variados-milkshake-de-chocolate-baunilha-e-morango_434193-2702.jpg?w=2000'/></td>
-          
-          <td class="frase4"> Temos diversos tamanhos e sabores de milkshakes, é só escolher o seu preferido! </br> </td> 
-        </tr>
-       </table>
-       <p id="nossosprodutos">Nossos produtos:</p>
-       <div width="20">
-       <img vspace="5" hspace="5" height="70" width="70" src="sorveteicon.png" alt="sorvete icon"><a href="cardapiosorvete.png">Sorvetes</a>
-       <img vspace="5" hspace="5" height="70" width="70" src="picoleicon.png" alt="picole icon"><a href="picoleicon.png">Picolés</a>
-    </div>
-       <footer>
-        <p> Copyright &copy; 2022 | Amor & Gelatto, Todos os direitos reservados &trade; &reg; 
-        <br> 
-        Desenvolvido por: José Rômulo, Maria Clara e Maria Eduarda </p>
-       </footer>
-    </body>
+        
+      </nav>
+  </header>
+  <main>
+    <aside>
+      <h2>Conheça nosso site!</h2>
+      <span><h2>Amor & Gelatto</h2> </span>
+      <p id="f1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <form id="login">
+      <input type="email" placeholder="E-mail">
+      <input type="password" placeholder="Senha">
+      <input id="botao" type="submit" value="Enviar">
+    </form>
+    <p>Não tem uma conta? <a id="inscrevase" href="inscrevase.html" target="_blank"><u>Inscreva-se</u></a></p>
+    </aside>
+    
+    <article>
+      <img id="sorveteinit"src="imageminicio.jpg" alt="Imagem de Sorvete">
+  </article>
+  </main>
+</body>
 </html>
