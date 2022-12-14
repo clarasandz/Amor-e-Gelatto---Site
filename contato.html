@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="pt-bt">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/1948/PNG/512/free-30-instagram-stories-icons20_122567.png">
+        <style>
+          body{
+            margin: 0 auto;
+            padding: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    #formulario{
+      margin-top: 70px;
+      margin-left: 50px;
+      background: white;
+      border-radius: 10px;
+      padding: 60px;
+      width: 80%;
+      align-items: center;
+
+    }
+    #titulo{
+      font-size: 1.8em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 10%;
+      color: rgb(224, 52, 80);
+      
+    }
+  .input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #6f7e8a solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+.input input{
+  width: 80%;
+  border: none;
+  outline: none;
+  
+}
+#botao{
+  margin-top: 10%;
+  width: 50%;
+  text-align: center;
+  
+}
+#botao button{
+  background: linear-gradient(45deg, rgb(212, 23, 54), rgb(211, 139, 139));
+  width: 50%;
+  height: 40px;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 150px;
+}
+#botao button:hover{
+  background: rgb(248, 168, 181) ;
+}
+#comentario{
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+ 
+}
+#info{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#titulo{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+         </style>   
+ 
+      </head>
+ <body>
+  <header>
+    <img src="amoregelattologo.png" width="100" height="100" align="left" vspace="5" hspace="5">
+      
+       <nav>
+      <ul>
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="cardapio.html">CARDÁPIO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+        
+      
+        </ul>
+        
+      </nav>
+  </header>
+  <div id="contato">
+    <form id="formulario">
+     <p id="titulo">Entre em contato com a gente.</p>
+ 
+    <label id="info" for="nome">Nome</label>
+    <div class="input">
+     <input id="nome" placeholder="Nome" type="text">
+     </div>
+ 
+ 
+     <label id="info" for="email">E-mail</label>
+    <div class="input">
+     <input id="email" placeholder="E-mail" type="email">
+    </div>
+
+<div>
+  <textarea id="comentario" placeholder="  Deixe sua opinião"></textarea>
+</div>
+
+ 
+     <div id="botao">
+       <button type="submit">enviar</button>
+ </div>
+ </form> 
+ 
+ </body>
+</html>
