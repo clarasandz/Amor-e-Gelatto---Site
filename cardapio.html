@@ -7,55 +7,88 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="amoregelattologo.png">
   <title>Cardápio</title>
-</head>
-<style>
-     body{
-      margin: 0 auto;
-      padding: 15px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      
-    }
-    .cardapio{
-        padding: 15px;
-        margin: 50px;
-        
-
-    }
-    #f2{
-        font-size: 25px;
-        text-align: center;
-        margin-top: 60px;
-        font-family:'Times New Roman';
-        font-weight: bold;
-        
-        
-    }
-    figure.foto img{
-        border: 10px solid #903;
-        background-color: #903;
-        border-radius: 30px;
-        margin-left: 70px;
-        margin-right: 70px;
-        align-items: center;
-          
-    }
-    figure.foto img:hover{
-     cursor: pointer;
-    background: rgb(245, 0, 102);
-    transition: 0.3s all;
-    border: rgb(245, 0, 102) none;
+  <style>
+    body{
+     margin: 0 auto;
+     padding: 15px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
    }
-#promoçao{
-    background-color: rgb(243, 123, 237);
-    border-radius: 20px;
-    margin-left: 10px;
-    padding:  5%;
-    align-items: center;
-    width: 30%;
-    
-}
+   .cardapio{
+       padding: 15px;
+       margin: 50px;
+       
 
+   }
+   #f2{
+       font-size: 25px;
+       text-align: center;
+       margin-top: 60px;
+       font-family:'Times New Roman';
+       font-weight: bold;
+       
+       
+   }
+   figure.foto img{
+       border: 10px solid #903;
+       background-color: #903;
+       border-radius: 30px;
+       margin-left: 70px;
+       margin-right: 70px;
+       align-items: center;
+         
+   }
+   figure.foto img:hover{
+    cursor: pointer;
+   background: rgb(245, 0, 102);
+   transition: 0.3s all;
+   border: rgb(245, 0, 102) none;
+  }
+/*#promoçao{
+   background-color: rgb(243, 123, 237);
+   border-radius: 20px;
+   width: 20%;
+   height: 70%;
+   
+}
+#promoçao img{
+ width: 40%;
+ margin-top: 20px;
+ margin-left: 60px;
+ align: center;
+}*/
+#dados{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+ }
+ input{
+   margin-top: 15px;
+   height: 15px;
+   padding: 15px;
+   border-radius: 20px;
+   border: none;
+   font-size: 15px;
+ }
+ #botao{
+   height: 50px;
+   width: 40%;
+   background-color: rgb(153, 0, 51);
+   color: white;
+   font-weight: bold;
+ }
+ #botao:hover{
+   cursor: pointer;
+   background: rgb(228, 117, 163);
+   color: #000; 
+   border-color: #000;
+   transition: 0.3s all;
+ }
 </style>
+
+
+</head>
+
 <body>
 
     <header>
@@ -65,10 +98,9 @@
           <ul>
             <li><a href="index.html">INÍCIO</a></li>
             <li><a href="sobre.html">SOBRE</a></li>
-            <li><a href="inscrevase.html">INSCREVA-SE</a></li>
             <li><a href="cardapio.html">CARDÁPIO</a></li>
             <li><a href="contato.html">CONTATO</a></li>
-            <li><a href="localizaçao.html">LOCALIZAÇÃO</a></li>
+            
           
             </ul>
             
@@ -83,15 +115,232 @@
       
         <a href="cardapioaçai.jpg" target="_blank"><img width="60px" height="60px" src="açaiicon.png"></a>
       
-        <a href="picole2.jpg" target="_blank"><img width="60px" height="60px" src="picoleicon.png"></a>
+        <a href="cardapiopicole.jpg" target="_blank"><img width="60px" height="60px" src="picoleicon.png"></a>
     </figure>
       </div>
-    <aside id="promoçao">
-        <iframe src="https://giphy.com/embed/bNlqpmBJRDMpxulfFB" width="330" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="promoçao.jpg" width="330" height="380">
-       
-    </aside>
 
+ 
+  <p>Agora que você deu uma olhada no nosso cardápio, está na hora de fazer o seu pedido!</p>
+  
+<main>
+  <form id="dados">
+    <p>Preencha os dados a seguir:</p>
+    <input  type="text" placeholder="Nome">
+    <input  type="text" placeholder="Rua">
+    <input  type="text" placeholder="Bairro">
+    <input  type="number" placeholder="Número">
+    <input  type="tel" placeholder="Telefone">
+    <input id="botao" type="submit" value="Enviar">
+  </form>
+</main>
+<br><br>
+  <p>Hora de fazer seu pedido:</p>
+  <div>
+  <input type="checkbox" id="sorvete" name="sorvete" value="1">
+  <label for="sorvete">Sorvete</label>
+  </div>
+  <br>
+  <p> Por favor, escolha o tamanho da casquinha:</p>
+  <input type="radio" id="P" name="tamanho" value="1">
+  <label for="tamanho1">P</label><br>
+  <input type="radio" id="M" name="tamanho" value="2">
+  <label for="tamanho2">M</label><br>
+  <input type="radio" id="G" name="tamanho" value="3">
+  <label for="tamanho3">G</label><br>
+  <input type="radio" id="GG" name="tamanho" value="4">
+  <label for="tamanho1">GG</label><br>
+  <br>
+  <p> Por favor, escolha a quantidade de bolas:</p>
+  <input type="radio" id="1" name="quantidade" value="1">
+  <label for="tamanho1">1 bola</label><br>
+  <input type="radio" id="2" name="quantidade" value="2">
+  <label for="tamanho2">2 bolas</label><br>
+  <input type="radio" id="3" name="quantidade" value="3">
+  <label for="tamanho3">3 bolas</label><br>
+  <input type="radio" id="4" name="quantidade" value="4">
+  <label for="tamanho1">4 bolas</label><br>
+  <br>
+  <p> Por favor, escolha os sabores (máximo 4):</p>
+<input type="checkbox" id="sabor1" name="sabor1" value="Morango">
+<label for="sabor1">Morango - tradicional</label><br>
+<input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+<label for="sabor2">Chocolate - tradicional</label><br>
+<input type="checkbox" id="sabor3" name="sabor3" value="Caramelo">
+<label for="sabor3">caramelo - tradicional</label><br>
+<input type="checkbox" id="sabor4" name="sabor4" value="Uva">
+<label for="sabor4">Uva - tradicional</label><br>
+<input type="checkbox" id="sabor5" name="sabor5" value="Coco">
+<label for="sabor5">Coco - tradicional</label><br>
+<input type="checkbox" id="sabor6" name="sabor6" value="Creme">
+<label for="sabor6">Creme - tradicional</label><br>
+<input type="checkbox" id="sabor7" name="sabor7" value="Maracuja">
+<label for="sabor7">Maracujá - tradicional</label><br>
+<input type="checkbox" id="sabor8" name="sabor8" value="Doce de leite">
+<label for="sabor8">Doce de leite - tradicional</label><br>
+<input type="checkbox" id="sabor9" name="sabor9" value="Baunilha">
+<label for="sabor9">Baunilha - tradicional</label><br>
+<input type="checkbox" id="sabor10" name="sabor10" value="Banana">
+<label for="sabor10">Banana - tradicional</label><br>
+<input type="checkbox" id="sabor11" name="sabor11" value="Leite">
+<label for="sabor11">Leite - tradicional</label><br>
+<input type="checkbox" id="sabor12" name="sabor12" value="AmoreGelatto">
+<label for="sabor12">Amor & Gelatto - especial</label><br>
+<input type="checkbox" id="sabor13" name="sabor13" value="Chá verde">
+<label for="sabor13">Chá verde - especial</label><br>
+<input type="checkbox" id="sabor14" name="sabor14" value="CremeBrulee">
+<label for="sabor14">Creme Brûlée - especial</label><br>
+<input type="checkbox" id="sabor15" name="sabor15" value="ChocolateBelga">
+<label for="sabor15">Chocolate belga - especial</label><br>
+<input type="checkbox" id="sabor16" name="sabor16" value="Nutella">
+<label for="sabor16">Nutella - especial</label><br>
+<input type="checkbox" id="sabor17" name="sabor17" value="Cereja">
+<label for="sabor17">Cereja - especial</label><br>
+<input type="checkbox" id="sabor18" name="sabor18" value="KinderOvo">
+<label for="sabor18">Kinder Ovo - especial</label><br>
+<input type="checkbox" id="sabor19" name="sabor19" value="Trufa">
+<label for="sabor19">Trufa - especial</label><br>
+<input type="checkbox" id="sabor20" name="sabor20" value="AbacaxiaFrancesa">
+<label for="sabor20">Abacaxi à fracesa - especial</label><br>
+<input type="checkbox" id="sabor21" name="sabor21" value="Pistache">
+<label for="sabor21">Pistache - especial</label><br>
+<br>
+<p>Por favor, escolha a cobertura (máximo 2):</p>
+<input type="checkbox" id="sabor22" name="sabor22" value="CobretChocolate">
+<label for="sabor22">Chocolate</label><br>
+<input type="checkbox" id="sabor23" name="sabor23" value="CobertMorango">
+<label for="sabor23">Morango</label><br>
+<input type="checkbox" id="sabor24" name="sabor24" value="CobertCaramelo">
+<label for="sabor24">Caramelo</label><br>
+<input type="checkbox" id="sabor25" name="sabor25" value="CobertMenta">
+<label for="sabor25">Menta</label><br>
+<input type="checkbox" id="sabor26" name="sabor26" value="CobertLeiteCondensado">
+<label for="sabor26">Leite condensado</label><br>
+<input type="checkbox" id="sabor27" name="sabor27" value="CobertBlueIce">
+<label for="sabor27">Blue ice</label><br>
+<input type="checkbox" id="sabor28" name="sabor28" value="CobertFV">
+<label for="sabor28">Frutas Vermelhas</label><br>
+<input type="checkbox" id="sabor29" name="sabor29" value="Brigadeiro">
+<label for="sabor29">Brigadeiro</label><br>
+<br>
+<hr>
+<div>
+  <input type="checkbox" id="milkshake" name="milkshake" value="2">
+  <label for="milkshake">Milkshake</label>
+</div>
+<br>
+<p>Por favor, escolha o sabor:</p>
+  <input type="radio" id="1" name="sabor1" value="1">
+  <label for="sabor1">Morango - tradicional</label><br>
+  <input type="radio" id="2" name="sabor2" value="2">
+  <label for="tsabor2">Chocolate - tradicional</label><br>
+  <input type="radio" id="3" name="sabor3" value="3">
+  <label for="sabor3">Chocolate branco - tradicional</label><br>
+  <input type="radio" id="4" name="sabor4" value=4 ">
+  <label for="sabor4">Sonho de valsa - tradicional</label><br>
+  <input type="radio" id="5" name="sabor5" value="5">
+  <label for="sabor5">Céu azul - tradicional</label><br>
+  <input type="radio" id="6" name="sabor6" value="6">
+  <label for="sabor6">Ovomaltine - especial</label><br>
+  <input type="radio" id="7" name="sabor7" value="7">
+  <label for="sabor7">Nutella</label><br>
+  <input type="radio" id="8" name="sabor8" value="8">
+  <label for="sabor8">Ninho</label><br>
+  <br>
+  <hr>
+<div>
+  <input type="checkbox" id="açai" name="açai" value="3">
+  <label for="açai">Açaí</label>
+</div>
+<br>
+<p> Por favor, escolha o tamanho:</p>
+  <input type="radio" id="300ml" name="tamanho1" value="1">
+  <label for="tamanho1">Copo de 300ml</label><br>
+  <input type="radio" id="500ml" name="tamanho2" value="2">
+  <label for="tamanho2">Copo de 500ml</label><br>
+  <input type="radio" id="700ml" name="tamanho3" value="3">
+  <label for="tamanho3">Copo de 700ml </label><br>
+  <br>
+  <p>Por favor, escolha os acompanhamentos:</p>
+  <input type="checkbox" id="1" name="acomp1" value="1">
+  <label for="acomp1">Banana</label><br>
+  <input type="checkbox" id="2" name="acomp2" value="2">
+  <label for="acomp2">Paçoca</label><br>
+  <input type="checkbox" id="3" name="acomp3" value="3">
+  <label for="acomp3">Granola</label><br>
+  <input type="checkbox" id="4" name="acomp4" value="4">
+  <label for="acomp4">Leite condensado</label><br>
+  <input type="checkbox" id="5" name="acomp5" value="5">
+  <label for="acomp5">Leite em pó</label><br>
+  <input type="checkbox" id="6" name="acomp6" value="6">
+  <label for="acomp6">Cobertura de chocolate</label><br>
+  <input type="checkbox" id="7" name="acomp7" value="7">
+  <label for="acomp7">Cobertura de morango</label><br>
+  <br>
+  <p>Acompanhamentos extras (máximo 3):</p>
+  <input type="checkbox" id="8" name="acomp8" value="8">
+  <label for="acomp8">Confeti</label><br>
+  <input type="checkbox" id="9" name="acomp9" value="9">
+  <label for="acomp9">Cereja</label><br>
+  <input type="checkbox" id="10" name="acomp10" value="10">
+  <label for="acomp10">Morango</label><br>
+  <input type="checkbox" id="11" name="acomp11" value="11">
+  <label for="acomp11">Kiwi</label><br>
+  <input type="checkbox" id="12" name="acomp12" value="12">
+  <label for="acomp12">Chocolate em pó</label><br>
+  <input type="checkbox" id="13" name="acomp13" value="13">
+  <label for="acomp13">Creme de avelã</label><br>
+  <input type="checkbox" id="14" name="acomp14" value="14">
+  <label for="acomp">Chocolate em barra</label><br>
+  <input type="checkbox" id="15" name="acomp15" value="15">
+  <label for="acomp15">Castanha de cajú</label><br>
+  <br>
+  <hr>
+<div>
+  <input type="checkbox" id="picole" name="picole" value="4">
+  <label for="picole">Picolé</label>
+</div>
+<br>
+<p>Por favor, escolha o sabor (máximo 3):</p>
+<input type="checkbox" id="sabor30" name="sabor30" value="30">
+<label for="sabor30">Maracujá - tradicional</label><br>
+<input type="checkbox" id="sabor31" name="sabor31" value="31">
+<label for="sabor31">Leite condensado - tradicional</label><br>
+<input type="checkbox" id="sabor32" name="sabor32" value="32">
+<label for="sabor"32>Morango - tradicional</label><br>
+<input type="checkbox" id="sabor33" name="sabor33" value="33">
+<label for="sabor33">Chocolate - tradicional</label><br>
+<input type="checkbox" id="sabor34" name="sabor34" value="34">
+<label for="sabor34">Limão - tradicional</label><br>
+<input type="checkbox" id="sabor35" name="sabor35" value="35">
+<label for="sabor35">Milho verde - tradicional</label><br>
+<input type="checkbox" id="sabor36" name="sabor36" value="36">
+<label for="sabo36r">Maçã verde - tradicional</label><br>
+<input type="checkbox" id="sabor37" name="sabor37" value="37">
+<label for="sabor37">Uva - tradicional</label><br>
+<br>
+<input type="checkbox" id="sabor38" name="sabor38" value="38">
+<label for="sabor38">Chocolate belga - especial</label><br>
+<input type="checkbox" id="sabo39r" name="sabor39" value="39">
+<label for="sabor39">Nutella - especial</label><br>
+<input type="checkbox" id="sabor40" name="sabor40" value="40">
+<label for="sabor40">Pralné de caramelo- especial</label><br>
+<input type="checkbox" id="sabor41" name="sabor41" value="41">
+<label for="sabor41">Ninho com morango - especial</label><br>
+<input type="checkbox" id="sabor42" name="sabor42" value="42">
+<label for="sabor42">Pistache - especial</label><br>
+<input type="checkbox" id="sabor43" name="sabor44" value="33">
+<label for="sabor33">Doce de leite - especial</label><br>
+<input type="checkbox" id="sabor44" name="sabor44" value="44">
+<label for="sabor44">Ovomaltine - especial</label><br>
+<input type="checkbox" id="sabor45" name="sabor45" value="45">
+<label for="sabor45">Amor e Gelatto - especial</label><br>
+<br>
+
+<footer>
+  <p> Copyright &copy; 2022 | Amor & Gelatto, Todos os direitos reservados &trade; &reg; 
+      <br> 
+      Desenvolvido por: José Rômulo, Maria Clara e Maria Eduarda </p>
+
+ </footer>
 </body>
 </html>
